@@ -10,7 +10,7 @@
 
 > Swift cmark wrapper for SwiftPM
 
-Very simple Swift wrapper of [cmark](https://github.com/jgm/cmark).
+Very simple Swift wrapper of [cmark](https://github.com/jgm/cmark). Uses a [fork](https://github.com/czechboy0/cmark) of cmark which has been adapted for building with SwiftPM.
 
 # Usage
 
