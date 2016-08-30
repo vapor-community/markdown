@@ -1,7 +1,7 @@
 # cmark.swift
 
-[![Build Status](https://travis-ci.org/czechboy0/Jay.svg?branch=master)](https://travis-ci.org/czechboy0/Jay)
-[![Latest Release](https://img.shields.io/github/release/czechboy0/jay.svg)](https://github.com/czechboy0/jay/releases/latest)
+[![Build Status](https://travis-ci.org/czechboy0/cmark.swift.svg?branch=master)](https://travis-ci.org/czechboy0/cmark.swift)
+[![Latest Release](https://img.shields.io/github/release/czechboy0/cmark.swift.svg)](https://github.com/czechboy0/cmark.swift/releases/latest)
 ![Platforms](https://img.shields.io/badge/platforms-Linux%20%7C%20OS%20X-blue.svg)
 ![Package Managers](https://img.shields.io/badge/package%20managers-SwiftPM-yellow.svg)
 
