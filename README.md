@@ -1,4 +1,4 @@
-# cmark.swift
+# SwiftMarkdown
 
 [![Build Status](https://travis-ci.org/czechboy0/cmark.swift.svg?branch=master)](https://travis-ci.org/czechboy0/cmark.swift)
 [![Latest Release](https://img.shields.io/github/release/czechboy0/cmark.swift.svg)](https://github.com/czechboy0/cmark.swift/releases/latest)
@@ -30,7 +30,7 @@ Due to a bug in SwiftPM Xcode generation [SR-2526](https://bugs.swift.org/browse
 ## Swift Package Manager
 
 ```swift
-.Package(url: "https://github.com/czechboy0/cmark.swift.git", majorVersion: 0, minor: 1)
+.Package(url: "https://github.com/brokenhandsio/SwiftMarkdown.git", majorVersion: 0, minor: 1)
 ```
 
 :gift_heart: Contributing
