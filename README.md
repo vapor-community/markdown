@@ -18,12 +18,9 @@ Very simple Swift wrapper of [cmark](https://github.com/jgm/cmark). Uses a [fork
 
 ```swift
 let markdown = "# Hello"
-let html = try markdownToHTML(markdown)
+let html = try markdownToHTML(markdown, options: [])
 print(html) //"<h1>Hello</h1>\n"
 ```
-
-# Warning
-Due to a bug in SwiftPM Xcode generation [SR-2526](https://bugs.swift.org/browse/SR-2526), if you're using this package in Xcode, you'll need to add one more header search path to the ccmark target: `Packages/cmark-0.26.1/Sources/ccmark/include`. After you do, everything should build fine in Xcode.
 
 # Installation
 
