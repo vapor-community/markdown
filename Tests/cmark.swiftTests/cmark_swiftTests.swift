@@ -1,5 +1,5 @@
 import XCTest
-@testable import cmark_swift
+import SwiftMarkdown
 
 class cmark_swiftTests: XCTestCase {
     func testMDtoHTML() {

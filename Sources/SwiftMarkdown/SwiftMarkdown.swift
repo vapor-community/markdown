@@ -1,4 +1,4 @@
-import ccmark
+import cmark
 
 public enum MarkdownError: Error {
     case conversionFailed
