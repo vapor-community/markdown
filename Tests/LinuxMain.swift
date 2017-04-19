@@ -1,6 +1,6 @@
 import XCTest
-@testable import cmark_swiftTests
+@testable import SwiftMarkdownTests
 
 XCTMain([
-     testCase(cmark_swiftTests.allTests),
+     testCase(SwiftMarkdownTests.allTests),
 ])

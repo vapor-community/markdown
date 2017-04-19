@@ -1,16 +1,10 @@
 # SwiftMarkdown
 
-[![Build Status](https://travis-ci.org/czechboy0/cmark.swift.svg?branch=master)](https://travis-ci.org/czechboy0/cmark.swift)
-[![Latest Release](https://img.shields.io/github/release/czechboy0/cmark.swift.svg)](https://github.com/czechboy0/cmark.swift/releases/latest)
-![Platforms](https://img.shields.io/badge/platforms-Linux%20%7C%20OS%20X-blue.svg)
-![Package Managers](https://img.shields.io/badge/package%20managers-SwiftPM-yellow.svg)
+[![Language](https://img.shields.io/badge/Swift-3-brightgreen.svg)](http://swift.org)
+[![Build Status](https://travis-ci.org/brokenhandsio/SwiftMarkdown.svg?branch=master)](https://travis-ci.org/brokenhandsio/SwiftMarkdown)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/brokenhandsio/SwiftMarkdown/master/LICENSE)
 
-[![Blog](https://img.shields.io/badge/blog-honzadvorsky.com-green.svg)](http://honzadvorsky.com)
-[![Twitter Czechboy0](https://img.shields.io/badge/twitter-czechboy0-green.svg)](http://twitter.com/czechboy0)
-
-> Swift cmark wrapper for SwiftPM
-
-Very simple Swift wrapper of [cmark](https://github.com/jgm/cmark). Uses a [fork](https://github.com/czechboy0/cmark) of cmark which has been adapted for building with SwiftPM.
+Very simple Swift wrapper of Github's fork of [cmark](https://github.com/github/cmark). Uses a [fork](https://github.com/brokenhandsio/cmark-gfm) of cmark which has been adapted for building with SwiftPM.
 
 # Usage
 
@@ -22,8 +16,25 @@ let html = try markdownToHTML(markdown)
 print(html) //"<h1>Hello</h1>\n"
 ```
 
-# Warning
-Due to a bug in SwiftPM Xcode generation [SR-2526](https://bugs.swift.org/browse/SR-2526), if you're using this package in Xcode, you'll need to add one more header search path to the ccmark target: `Packages/cmark-0.26.1/Sources/ccmark/include`. After you do, everything should build fine in Xcode.
+## Options
+
+You can pass different options to the underlying `cmark` library. By default `safe` is passed, but this can be explicitly done with:
+
+```swift
+let html = try markdownToHTML(markdown, options: [.safe])
+```
+
+The available options are:
+
+* sourcePosition
+* hardBreaks
+* safe
+* noBreaks
+* normalize
+* validateUTF8
+* smartQuotes
+
+For more information on the available options, see [`cmark`](https://github.com/github/cmark).
 
 # Installation
 
@@ -32,16 +43,3 @@ Due to a bug in SwiftPM Xcode generation [SR-2526](https://bugs.swift.org/browse
 ```swift
 .Package(url: "https://github.com/brokenhandsio/SwiftMarkdown.git", majorVersion: 0, minor: 1)
 ```
-
-:gift_heart: Contributing
-------------
-Please create an issue with a description of your problem or open a pull request with a fix.
-
-:v: License
--------
-MIT
-
-:alien: Author
-------
-Honza Dvorsky - https://honzadvorsky.com, [@czechboy0](http://twitter.com/czechboy0)
-
