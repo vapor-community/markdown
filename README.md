@@ -41,5 +41,5 @@ For more information on the available options, see [`cmark`](https://github.com/
 ## Swift Package Manager
 
 ```swift
-.Package(url: "https://github.com/vapor-community/markdown.git", majorVersion: 0, minor: 1)
+.Package(url: "https://github.com/vapor-community/markdown.git", majorVersion: 0, minor: 3)
 ```
