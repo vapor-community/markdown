@@ -13,7 +13,7 @@ Very simple Swift wrapper of Github's fork of [cmark](https://github.com/github/
 ```swift
 let markdown = "# Hello"
 let html = try markdownToHTML(markdown)
-print(html) //"<h1>Hello</h1>\n"
+print(html) // This will return "<h1>Hello</h1>\n"
 ```
 
 ## Options
