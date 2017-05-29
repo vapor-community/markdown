@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/vapor-community/markdown.svg?branch=master)](https://travis-ci.org/vapor-community/markdown)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vapor-community/markdown/master/LICENSE)
 
-Very simple Swift wrapper of Github's fork of [cmark](https://github.com/github/cmark). Uses a [fork](https://github.com/brokenhandsio/cmark-gfm) of cmark which has been adapted for building with SwiftPM.
+Very simple Swift wrapper of GitHub's fork of [cmark](https://github.com/github/cmark). Uses a [fork](https://github.com/brokenhandsio/cmark-gfm) of cmark which has been adapted for building with SwiftPM.
 
 # Usage
 
