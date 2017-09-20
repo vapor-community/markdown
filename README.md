@@ -1,6 +1,6 @@
 # Markdown
 
-[![Language](https://img.shields.io/badge/Swift-3-brightgreen.svg)](http://swift.org)
+[![Language](https://img.shields.io/badge/Swift-4-brightgreen.svg)](http://swift.org)
 [![Build Status](https://travis-ci.org/vapor-community/markdown.svg?branch=master)](https://travis-ci.org/vapor-community/markdown)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/vapor-community/markdown/master/LICENSE)
 
@@ -41,5 +41,5 @@ For more information on the available options, see [`cmark`](https://github.com/
 ## Swift Package Manager
 
 ```swift
-.Package(url: "https://github.com/vapor-community/markdown.git", majorVersion: 0, minor: 3)
+.package(url: "https://github.com/vapor-community/markdown.git", .upToNextMajor(from: "0.4.0"))
 ```
