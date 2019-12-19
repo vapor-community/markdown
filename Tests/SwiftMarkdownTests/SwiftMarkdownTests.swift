@@ -13,8 +13,26 @@ class SwiftMarkdownTests: XCTestCase {
 | --- | --- |
 | baz | bim |
 """
+        let expectedOutput = """
+<table>
+<thead>
+<tr>
+<th>foo</th>
+<th>bar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>baz</td>
+<td>bim</td>
+</tr>
+</tbody>
+</table>
+
+"""
+        
         let output = try markdownToHTML(input, options: .safe)
         
-        XCTAssertEqual(output, "expectedOutput")
+        XCTAssertEqual(output, expectedOutput)
     }
 }
