@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "SwiftMarkdown", targets: ["SwiftMarkdown"]),
     ],
     dependencies: [
-    	.package(url: "https://github.com/brokenhandsio/cmark-gfm.git", .upToNextMajor(from: "1.0.0")),
+    	.package(url: "https://github.com/brokenhandsio/cmark-gfm.git", .branch("master")),
     ],
     targets: [
         .target(name: "SwiftMarkdown", dependencies: ["cmark"]),

@@ -3,11 +3,18 @@ import SwiftMarkdown
 
 class SwiftMarkdownTests: XCTestCase {
     
-    static var allTests = [
-        ("testMDtoHTML", testMDtoHTML),
-    ]
-    
     func testMDtoHTML() {
         XCTAssertEqual(try markdownToHTML("# Hello"), "<h1>Hello</h1>\n")
+    }
+    
+    func testGFMtoHTML() throws {
+        let input = """
+| foo | bar |
+| --- | --- |
+| baz | bim |
+"""
+        let output = try markdownToHTML(input)
+        
+        XCTAssertEqual(output, "expectedOutput")
     }
 }
