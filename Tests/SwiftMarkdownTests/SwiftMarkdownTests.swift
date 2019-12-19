@@ -13,7 +13,7 @@ class SwiftMarkdownTests: XCTestCase {
 | --- | --- |
 | baz | bim |
 """
-        let output = try markdownToHTML(input)
+        let output = try markdownToHTML(input, options: .safe)
         
         XCTAssertEqual(output, "expectedOutput")
     }
