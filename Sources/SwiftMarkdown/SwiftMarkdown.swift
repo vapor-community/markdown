@@ -18,6 +18,7 @@ public struct MarkdownOptions: OptionSet {
 	static public let normalize = MarkdownOptions(rawValue: 1 << 8)
 	static public let validateUTF8 = MarkdownOptions(rawValue: 1 << 9)
 	static public let smartQuotes = MarkdownOptions(rawValue: 1 << 10)
+	static public let unsafe = MarkdownOptions(rawValue: 1 << 17)
 }
 
 public func markdownToHTML(_ str: String, options: MarkdownOptions = [.safe]) throws -> String {
