@@ -1,4 +1,7 @@
 import cmark
+#if os(Android) || os(Linux)
+import Glibc
+#endif
 
 public enum MarkdownError: Error {
     case conversionFailed
