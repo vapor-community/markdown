@@ -10,13 +10,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: swift test --enable-test-discovery
-  swift55:
-    container: 
-      image: swift:5.5
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - run: swift test
+  # swift55:
+  #   container: 
+  #     image: swift:5.5
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v2
+  #   - run: swift test
   bionic:
     container: 
       image: vapor/swift:5.1-bionic
