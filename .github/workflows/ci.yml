@@ -7,14 +7,21 @@ jobs:
       image: vapor/swift:5.1-xenial
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - run: swift test --enable-test-discovery --enable-code-coverage
+    - uses: actions/checkout@v2
+    - run: swift test --enable-test-discovery
+  swift55:
+    container: 
+      image: swift:5.5
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: swift test
   bionic:
     container: 
       image: vapor/swift:5.1-bionic
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
     - name: Run Bionic Tests
       run: swift test --enable-test-discovery --enable-code-coverage
     - name: Setup container for codecov upload
