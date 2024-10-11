@@ -1,4 +1,4 @@
-import cmark
+import cmark_gfm
 #if os(Android) || os(Linux)
 import Glibc
 #endif
@@ -28,7 +28,7 @@ public func markdownToHTML(_ str: String, options: MarkdownOptions = [.safe]) th
     var buffer: String?
     try str.withCString {
         
-        guard let buf = cmark_gfm_markdown_to_html($0, Int(strlen($0)), options.rawValue) else {
+        guard let buf = cmark_markdown_to_html($0, Int(strlen($0)), options.rawValue) else {
             throw MarkdownError.conversionFailed
         }
         
